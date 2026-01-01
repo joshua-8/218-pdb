@@ -1,0 +1,48 @@
+name: Process KiCad
+
+on:
+  workflow_dispatch:
+  push:
+    branches: []
+    paths:
+      - 'kicad/**'
+      - '.github/workflows/process-kicad.yml'
+
+concurrency:
+  group: Compile
+  cancel-in-progress: true
+
+jobs:
+  ProcessKicad:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: pull kicad docker
+        run: |
+          git config --global user.name 'joshua-8'
+          git config --global user.email 'joshua-8@users.noreply.github.com'
+          git pull
+
+          docker pull kicad/kicad:9.0-full
+      - name: process kicad
+        run: |
+          docker run --rm --user root --mount type=bind,source=${{ github.workspace }},target=/workspace kicad/kicad:9.0-full /bin/bash -c "
+            kicad-cli sch export pdf --no-background-color --output '/workspace/schematic.pdf' /workspace/kicad/218-pdb.kicad_sch
+            kicad-cli sch export bom /workspace/kicad/218-pdb.kicad_sch --output /workspace/BOM.csv --fields 'Reference,Value,Footprint,Part_Number\${QUANTITY}' --group-by 'Part_Number,Value' --exclude-dnp
+            kicad-cli pcb export step /workspace/kicad/218-pdb.kicad_pcb --output /workspace/218-pdb.step --force --include-silkscreen
+            kicad-cli pcb export stl /workspace/kicad/218-pdb.kicad_pcb --output /workspace/218-pdb.stl --force
+            kicad-cli pcb export gerbers --layers F.Cu,B.Cu,F.Paste,B.Paste,F.Silkscreen,B.Silkscreen,F.Mask,B.Mask,Edge.Cuts /workspace/kicad/218-pdb.kicad_pcb --output /workspace/gerbers
+            kicad-cli pcb export drill /workspace/kicad/218-pdb.kicad_pcb --output /workspace/gerbers
+            zip -r /workspace/gerbers.zip /workspace/gerbers
+            rm -rf /workspace/gerbers
+            kicad-cli pcb render --output '/workspace/renders/top.png' --background transparent --rotate '0,0,0' --width 1000 --height 1000 /workspace/kicad/218-pdb.kicad_pcb
+            kicad-cli pcb render --output '/workspace/renders/back.png' --background transparent --rotate '179,0,180' --width 1000 --height 1000 /workspace/kicad/218-pdb.kicad_pcb
+            kicad-cli pcb render --output '/workspace/renders/perspective1.png' --background transparent --perspective --zoom 0.65 --rotate '315,0,45' --width 1000 --height 1000 /workspace/kicad/218-pdb.kicad_pcb
+            kicad-cli pcb render --output '/workspace/renders/perspective2.png' --background transparent --perspective --zoom 0.65 --rotate '315,0,315' --width 1000 --height 1000 /workspace/kicad/218-pdb.kicad_pcb
+          "
+            
+          git add .
+          git commit . -m "BOT process kicad" --allow-empty
+          git push
+

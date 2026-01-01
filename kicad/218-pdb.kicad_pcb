@@ -25559,8 +25559,8 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text "Batt.\n+- +-"
-		(at 93.218 97.409 0)
+	(gr_text "  Battery\n+- +-"
+		(at 93.353919 97.467361 0)
 		(layer "F.SilkS")
 		(uuid "eeae5d82-d6ca-4c11-b6ce-503910e6bb4b")
 		(effects
