@@ -29,7 +29,7 @@ jobs:
         run: |
           docker run --rm --user root --mount type=bind,source=${{ github.workspace }},target=/workspace kicad/kicad:9.0-full /bin/bash -c "
             kicad-cli sch export pdf --no-background-color --output '/workspace/schematic.pdf' /workspace/kicad/218-pdb.kicad_sch
-            kicad-cli sch export bom /workspace/kicad/218-pdb.kicad_sch --output /workspace/BOM.csv --fields 'Reference,Value,Footprint,Part_Number\${QUANTITY}' --group-by 'Part_Number,Value' --exclude-dnp
+            kicad-cli sch export bom /workspace/kicad/218-pdb.kicad_sch --output /workspace/BOM.csv --fields 'Reference,Value,Footprint,Part_Number,\${QUANTITY}' --group-by 'Part_Number,Value' --exclude-dnp
             kicad-cli pcb export step /workspace/kicad/218-pdb.kicad_pcb --output /workspace/CAD/218-pdb.step --force --include-silkscreen
             kicad-cli pcb export stl /workspace/kicad/218-pdb.kicad_pcb --output /workspace/CAD/218-pdb.stl --force
             kicad-cli pcb export pdf /workspace/kicad/218-pdb.kicad_pcb --output /workspace/pcb.pdf --mode-single --layers F.Cu,Edge.Cuts,F.Silkscreen,B.Cu,B.Silkscreen

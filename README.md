@@ -5,6 +5,8 @@
 
 24 plugs for 3.3v and/or 5v
 
+4 plugs for 14v
+
 two 5v buck converters (to isolate servos from other systems)
 
 two 3.3v regulators (to isolate components and/or provide more current)
@@ -20,8 +22,8 @@ two 3.3v regulators (to isolate components and/or provide more current)
 
 * to disconnect the buck converters from the LDOs so that the buck converters can be set,  pull NT1
 
-* traces
-* final aligning of labels of silkscreen
+* final aligning of labels on silkscreen
 * complete the BOM with all part numbers and values
     * make list of parts in readme by vendor
-
+* add documentation to readme
+* make documentation and diagrams

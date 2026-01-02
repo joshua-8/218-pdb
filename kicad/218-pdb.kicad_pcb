@@ -25038,6 +25038,16 @@
 		(uuid "169f330b-1667-4dcb-bc30-688aee11e2b6")
 	)
 	(gr_line
+		(start 138.938 89.662)
+		(end 137.414 85.598)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "1962185d-d8ce-4e8a-93aa-5fde4a39fcab")
+	)
+	(gr_line
 		(start 123.180048 53.34)
 		(end 128.27 58.42)
 		(stroke
@@ -25046,6 +25056,16 @@
 		)
 		(layer "F.SilkS")
 		(uuid "20c9e54b-4424-4801-b680-9fa017e0cdca")
+	)
+	(gr_line
+		(start 137.780754 85.964754)
+		(end 137.414 85.598)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "21112f24-e254-4c1c-b1bd-6ec28bc14c53")
 	)
 	(gr_line
 		(start 90.17 83.82)
@@ -25138,16 +25158,6 @@
 		(uuid "8b2fdb74-22b2-4e7a-87c5-20e5e3922d54")
 	)
 	(gr_line
-		(start 140.927864 90.381864)
-		(end 135.780396 85.234396)
-		(stroke
-			(width 0.1)
-			(type default)
-		)
-		(layer "F.SilkS")
-		(uuid "add1765f-49cc-497d-afce-a0809a0d6cc3")
-	)
-	(gr_line
 		(start 93.98 53.34)
 		(end 82.55 58.42)
 		(stroke
@@ -25216,6 +25226,16 @@
 		)
 		(layer "F.SilkS")
 		(uuid "f0771304-5d7f-419a-a95f-6eb14cfc29d7")
+	)
+	(gr_line
+		(start 137.414 85.598)
+		(end 137.414 86.106)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "f6bdfd4e-4879-4588-8e7f-b1a362c1942c")
 	)
 	(gr_line
 		(start 120.65 53.34)
@@ -25360,7 +25380,7 @@
 		)
 	)
 	(gr_text "switch"
-		(at 152.4 78.359 0)
+		(at 152.373296 80.504479 0)
 		(layer "F.SilkS")
 		(uuid "4443b4d7-2523-4311-9111-87c5cdd54faa")
 		(effects
@@ -25368,6 +25388,18 @@
 				(size 1 1)
 				(thickness 0.125)
 			)
+		)
+	)
+	(gr_text "+"
+		(at 138.9 83.82 0)
+		(layer "F.SilkS")
+		(uuid "601004a4-8342-4dac-a969-861e956fb5ab")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.1875)
+			)
+			(justify left bottom)
 		)
 	)
 	(gr_text "S\n3\nG"
@@ -25382,6 +25414,18 @@
 			(justify left bottom)
 		)
 	)
+	(gr_text "-"
+		(at 138.980647 88.100738 0)
+		(layer "F.SilkS")
+		(uuid "8478ed6d-1d60-4d3f-bdf3-2971a750b252")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.1875)
+			)
+			(justify left bottom)
+		)
+	)
 	(gr_text "5\nG\n3"
 		(at 76.835 74.93 0)
 		(layer "F.SilkS")
@@ -25390,6 +25434,18 @@
 			(font
 				(size 1.75 1.75)
 				(thickness 0.21875)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "+   - +      -"
+		(at 85.337466 97.267084 0)
+		(layer "F.SilkS")
+		(uuid "a5a70685-72c4-4f95-8109-accc702782e1")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.1875)
 			)
 			(justify left bottom)
 		)
@@ -25430,7 +25486,7 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text "  Battery\n+- +-"
+	(gr_text "  Battery\n    "
 		(at 93.451157 97.408111 0)
 		(layer "F.SilkS")
 		(uuid "eeae5d82-d6ca-4c11-b6ce-503910e6bb4b")

@@ -6857,7 +6857,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "one pin header"
+		(property "Value" "one header pin"
 			(at 17.272 39.878 0)
 			(effects
 				(font
@@ -9020,7 +9020,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "one pin header"
+		(property "Value" "one header pin"
 			(at 17.272 74.168 0)
 			(effects
 				(font
@@ -9207,7 +9207,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "one pin header"
+		(property "Value" "one header pin"
 			(at 17.272 42.418 0)
 			(effects
 				(font
@@ -9954,7 +9954,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "one pin header"
+		(property "Value" "one header pin"
 			(at 17.272 75.438 0)
 			(effects
 				(font
@@ -10660,7 +10660,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "one pin header"
+		(property "Value" "one header pin"
 			(at 17.272 76.708 0)
 			(effects
 				(font
@@ -12648,7 +12648,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "one pin header"
+		(property "Value" "one header pin"
 			(at 17.272 41.148 0)
 			(effects
 				(font
@@ -13099,7 +13099,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "one pin header"
+		(property "Value" "one header pin"
 			(at 17.272 72.898 0)
 			(effects
 				(font
@@ -13787,7 +13787,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "one pin header"
+		(property "Value" "one header pin"
 			(at 17.272 38.608 0)
 			(effects
 				(font
