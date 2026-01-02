@@ -420,6 +420,8 @@
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(roundrect_rratio 0.079114)
+		(thermal_bridge_width 1)
+		(thermal_bridge_angle 45)
 		(uuid "ef2bde8a-3a7b-4e10-bce9-48ff0c80a7b6")
 	)
 	(pad "2" thru_hole oval

@@ -208,6 +208,7 @@
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(solder_mask_margin 0.102)
+		(zone_connect 2)
 		(uuid "e07d1c35-2f27-4f2d-bdc9-08c2d77ea975")
 	)
 	(embedded_fonts no)
