@@ -32,7 +32,7 @@ jobs:
             kicad-cli sch export bom /workspace/kicad/218-pdb.kicad_sch --output /workspace/BOM.csv --fields 'Reference,Value,Footprint,Part_Number,\${QUANTITY}' --group-by 'Part_Number,Value' --exclude-dnp
             kicad-cli pcb export step /workspace/kicad/218-pdb.kicad_pcb --output /workspace/CAD/218-pdb.step --force --include-silkscreen
             kicad-cli pcb export stl /workspace/kicad/218-pdb.kicad_pcb --output /workspace/CAD/218-pdb.stl --force
-            kicad-cli pcb export pdf /workspace/kicad/218-pdb.kicad_pcb --output /workspace/pcb.pdf --mode-single --layers F.Cu,Edge.Cuts,F.Silkscreen,B.Cu,B.Silkscreen
+            kicad-cli pcb export pdf /workspace/kicad/218-pdb.kicad_pcb --output /workspace/pcb.pdf --mode-single --layers 'B.Cu,B.Silkscreen,F.Cu,F.Silkscreen,Edge.Cuts'
             kicad-cli pcb export gerbers --layers F.Cu,B.Cu,F.Paste,B.Paste,F.Silkscreen,B.Silkscreen,F.Mask,B.Mask,Edge.Cuts /workspace/kicad/218-pdb.kicad_pcb --output /workspace/gerbers
             kicad-cli pcb export drill /workspace/kicad/218-pdb.kicad_pcb --output /workspace/gerbers
             zip -r /workspace/gerbers.zip /workspace/gerbers
