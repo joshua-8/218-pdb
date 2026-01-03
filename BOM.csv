@@ -13,7 +13,7 @@
 "main1","MotorSW","218-pdb:CUI_TB007-508-02BE","screw terminal, 5.08"" pitch, TB007-508-02BE","1"
 "NT1,NT2","~","218-pdb:PinHeader_1x03_P2.54mm_Vertical","3 header pins 0.1"" pitch","2"
 "R1,R2","680","Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P2.54mm_Vertical","spdl","2"
-"R3","2.5k","Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P2.54mm_Vertical","spdl","1"
+"R3","3.3k","Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P2.54mm_Vertical","spdl","1"
 "R4,R5","1k","Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P2.54mm_Vertical","spdl","2"
 "SW1","5V switch","218-pdb:SLW-12689-4A-N-D","SLW-12689-4A-N-D","1"
 "TP1","ground","TestPoint:TestPoint_Bridge_Pitch5.08mm_Drill0.7mm","piece of wire","1"
