@@ -2,7 +2,7 @@
 "C1,C2","0.1 uF","Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm","0.1 uF ceramic capacitor","2"
 "C4,C5","10 uF","Capacitor_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm","10uF tantalum (polarized) capacitor","2"
 "D1-D5","LED","218-pdb:LED_D3.0mm","3 mm diameter LED","5"
-"D6","diode, >=1Amp","Diode_THT:D_DO-41_SOD81_P2.54mm_Vertical_AnodeUp","spdl, 1N4935","1"
+"D6","schottky diode, >=2 Amp","Diode_THT:D_DO-41_SOD81_P2.54mm_Vertical_AnodeUp",">=2 Amp schottky e.g. SB260S-E3/54 digikey 112-SB260S-E3/54CT-ND","1"
 "FID1,FID2","jumper","218-pdb:jumper","pin jumper 0.1"" pitch Sullins QPC02SXGN-RC","2"
 "FID3-FID10","one header pin","218-pdb:PinHeader_1x01_P2.54mm_Vertical","spdl, one header pin","8"
 "J1-J24","Conn_01x03","218-pdb:Molex_KK-254_AE-6410-03A_1x03_P2.54mm_Vertical","3 pin KK254 molex 0022232031","24"
