@@ -10,7 +10,7 @@
 "J29-J32","14 V molex","218-pdb:Molex_KK-396_A-41791-0002_1x02_P3.96mm_Vertical","2 pin KK396 molex 0026604020","4"
 "J33","external 5V","218-pdb:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical","2 pin KK 254 molex 0022232021","1"
 "J34,J35","battery","218-pdb:CUI_TB007-508-02BE","screw terminal, 5.08"" pitch, TB007-508-02BE","2"
-"main1","MotorSW","218-pdb:CUI_TB007-508-02BE","screw terminal, 5.08"" pitch, TB007-508-02BE","1"
+"main1","MainSW","218-pdb:CUI_TB007-508-02BE","screw terminal, 5.08"" pitch, TB007-508-02BE","1"
 "NT1,NT2","~","218-pdb:PinHeader_1x03_P2.54mm_Vertical","3 header pins 0.1"" pitch","2"
 "R1,R2","680","Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P2.54mm_Vertical","spdl","2"
 "R3","3.3k","Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P2.54mm_Vertical","spdl","1"
