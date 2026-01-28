@@ -1,4 +1,4 @@
-#archived, moved to https://github.com/SPDLDaemon/SPDL-PDB
+# archived, moved to https://github.com/SPDLDaemon/SPDL-PDB
 
 # Smart Product Design Lab - Power Distribution Board v2.1
 ## features
@@ -40,4 +40,5 @@ JST XH crimps (48)
 small flathead screwdriver
 
 JST XH crimper
+
 
