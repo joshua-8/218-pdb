@@ -1,3 +1,5 @@
+#archived, moved to https://github.com/SPDLDaemon/SPDL-PDB
+
 # Smart Product Design Lab - Power Distribution Board v2.1
 ## features
 * 16 JST XH plugs with 3.3v ground and 5 volts
@@ -38,3 +40,4 @@ JST XH crimps (48)
 small flathead screwdriver
 
 JST XH crimper
+
